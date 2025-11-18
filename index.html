@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First-Person Horror Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="ui">
+            <p id="instructions">Use mouse to look around. WASD to move. Survive the horror!</p>
+            <p id="status">Status: Exploring...</p>
+        </div>
+    </div>
+    <audio id="ambient-sound" loop>
+        <source src="ambient.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="jump-scare-sound">
+        <source src="scream.mp3" type="audio/mpeg">
+    </audio>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
